@@ -1,0 +1,23 @@
+/* Estilização padrão de todas as páginas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --gradiante-princiapal: linear-gradient(#1F2862,#265395);
+}
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    margin-top: 11rem;
+    background-color: black;
+}
+@media (max-width: 767px) {
+    body{
+        margin-top: 12rem;
+    }
+}
+@media (max-width: 425px) {
+    
+}
