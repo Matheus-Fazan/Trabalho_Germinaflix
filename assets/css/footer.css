@@ -1,0 +1,18 @@
+footer{
+    text-align: center;
+    background-color: #1F2862;
+    color: white;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+@media (max-width: 505px){
+    footer{
+        font-size: 0.7rem
+    }
+}
+@media (max-width: 357px){
+    footer{
+        font-size: 0.5rem
+    }
+}
