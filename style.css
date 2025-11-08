@@ -1,2 +1,309 @@
+:root{
+    --gradiante-princiapal: linear-gradient(#1F2862,#265395);
+}
+
+/* Primeira parte do site */
+
+#principal-incio{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+#principal-incio div h1{
+    font-size: 6.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+#principal-incio div p{
+    font-size: 1.6rem;
+    width:85%;
+}
+#principal-incio img{
+    margin-top: 1.5rem;
+}
 
 
+/* Parte para saber sobre */
+
+#saiba-sobre{
+    margin-top: 6rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#saiba-sobre h2{
+    font-size: 3rem;
+}
+
+#cards-saiba-sobre{
+    display: flex;
+    margin: 1.5rem 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+#cards-saiba-sobre section{
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    width: 30%;
+    background-image: var(--gradiante-princiapal);
+}
+#cards-saiba-sobre section h3{
+    font-size: 1.7rem;
+}
+#cards-saiba-sobre section p{
+    font-size: 1.4rem;
+}
+#cards-saiba-sobre section img{
+    width: 9rem;
+    margin-bottom: 1rem;
+}
+
+/* Parte dos produtos recomendados */
+#produtos-recomendados{
+    margin-top: 6rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#produtos-recomendados h2{
+    font-size: 3rem;
+}
+#cards-produtos-recomendados{
+    display: flex;
+    margin: 1.5rem 3rem;
+    justify-content: space-between;
+    width: 90%;
+    gap: 2rem;
+}
+#cards-produtos-recomendados section{
+    border-radius: 0.8rem;
+    padding: 1.5rem 1.5rem;
+    width: 30%;
+    background-image: var(--gradiante-princiapal);
+}
+#cards-produtos-recomendados section img{
+    height: 15rem;
+}
+#cards-produtos-recomendados h4{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+#cards-produtos-recomendados p{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+#cards-produtos-recomendados section a{
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    border-radius: 0.8rem;
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#cards-produtos-recomendados section>div{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 1350px) {
+    #principal-incio img{
+        width: 30rem;
+    }
+    #principal-incio div h1{
+        font-size: 5.5rem;
+    }
+    #principal-incio div p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1093px) {
+    #principal-incio img{
+        width: 25rem;
+    }
+    #principal-incio div h1{
+        font-size: 3.8rem;
+    }
+    #principal-incio div p{
+        font-size: 1.1rem;
+    }
+    #cards-saiba-sobre section h3{
+        font-size: 1.3rem;
+    }
+    #cards-saiba-sobre section p{
+        font-size: 0.8rem;
+    }
+    #cards-saiba-sobre section img{
+        width: 7rem;
+    }
+    #saiba-sobre,
+    #produtos-recomendados{
+        margin-top: 0rem;
+    }
+    #saiba-sobre h2,
+    #produtos-recomendados h2{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    #cards-produtos-recomendados h4{
+        font-size: 1rem;
+    }
+    #cards-produtos-recomendados p{
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+    #cards-produtos-recomendados section img{
+        height: 11rem;
+    }
+}
+
+@media (max-width: 838px) {
+    #principal-incio img{
+        width: 20rem;
+    }
+    #principal-incio div h1{
+        font-size: 3rem;
+    }
+    #principal-incio div p{
+        font-size: 0.8rem;
+    }
+    #cards-produtos-recomendados h4{
+        font-size: 0.8rem;
+    }
+    #cards-produtos-recomendados p{
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+    #cards-produtos-recomendados section img{
+        height: 10rem;
+    }
+    #cards-produtos-recomendados section a{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 689px) {
+    #principal-incio img{
+        width: 15rem;
+    }
+    #principal-incio div h1{
+        font-size: 2.3rem;
+    }
+    #principal-incio div p{
+        font-size: 0.8rem;
+    }
+    #cards-saiba-sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+    #cards-saiba-sobre section{
+        width: 90%;
+    }
+    #saiba-sobre h2{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    #produtos-recomendados h2{
+        font-size: 2rem;
+    }
+        
+    #cards-saiba-sobre section h3{
+        font-size: 1.7rem;
+    }
+    #cards-saiba-sobre section p{
+        font-size: 1.3rem;
+        margin: 1rem;
+    }
+    #cards-saiba-sobre section img{
+        width: 9rem;
+    }
+    #cards-produtos-recomendados{
+        flex-direction: column;
+        align-items: center;
+    }
+    #cards-produtos-recomendados section{
+        width: 90%;
+    }
+    #cards-produtos-recomendados h4{
+        font-size: 1.4rem;
+    }
+    #cards-produtos-recomendados p{
+        font-size: 1.2rem;
+    }
+    #cards-produtos-recomendados section img{
+        height: 15rem;
+    }
+    #cards-produtos-recomendados section a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    #principal-incio{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #principal-incio img{
+        width: 25rem;
+    }
+    #principal-incio div h1{
+        font-size: 3rem;
+    }
+    #principal-incio div p{
+        font-size: 1rem;
+        width: fit-content;
+    }
+}
+@media (max-width: 420px) {
+    #principal-incio img{
+        width: 19rem;
+    }
+    #principal-incio div h1{
+        font-size: 2.2rem;
+    }
+    #principal-incio div p{
+        font-size: 0.8rem;
+        width: fit-content;
+    }
+    #saiba-sobre h2{
+        font-size: 2rem;
+    }
+    #produtos-recomendados h2{
+        font-size: 1.3rem;
+    }
+    #cards-saiba-sobre section h3{
+        font-size: 1.2rem;
+    }
+    #cards-saiba-sobre section p{
+        font-size: 0.8rem;
+        margin: 1rem;
+    }
+    #cards-saiba-sobre section img{
+        width: 6rem;
+    }
+    #cards-saiba-sobre section{
+        width: 100%;
+    }
+    #cards-produtos-recomendados h4{
+        font-size: 1.1rem;
+    }
+    #cards-produtos-recomendados p{
+        font-size: 0.9rem;
+    }
+    #cards-produtos-recomendados section img{
+        height: 10rem;
+    }
+    #cards-produtos-recomendados section a{
+        font-size: 0.8rem;
+    }
+}
