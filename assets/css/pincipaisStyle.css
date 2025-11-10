@@ -142,6 +142,13 @@ main {
     font-weight: 300;
     margin: 0;
 }
+.atores-section a,
+.atores-section a:visited,
+.atores-section a:hover,
+.atores-section a:active{
+    text-decoration: none;
+    color: white;
+}
 
 /* Responsive Design */
 @media (max-width: 767px) {
