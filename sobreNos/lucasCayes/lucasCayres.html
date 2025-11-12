@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/lucasCayres.css">
-    <title>Página Pessoal</title>
+    <title>Lucas Cayres</title>
+
+    <link rel="stylesheet" href="../../assets/css/lucasCayres.css">
 </head>
-<body> 
+<body>
     <header>
-        <a href="../sobreNos.html">
-            <h1>Cayres</h1>
-        </a>
+        <h1>Cayres</h1>
         <aside>
             <ul>
                 <li>
-                    <a href="#resumo">Conheça-me</a>
+                    <a href="#sobreMim">Sobre Mim</a>
                 </li>
                 <li>
                     <a href="#curiosidades">Curiosidades</a>
@@ -28,10 +27,19 @@
             </ul>
         </aside>
     </header>
-    <main id="resumo">
-        <div id="mainFlex">
+    <main>
+        <article id="inicio">
             <div>
-                <h2>Conheça-me</h2>
+                <h1>Lucas<br>Cayres Porto</h1>
+                <img id="imagemFamilia" src="../../assets/img/lucasCayres/familiaLucasCayres.png" alt="">
+            </div>
+            
+            <img id="imagemMinha" src="../../assets/img/lucasCayres/fotoLucasCayres.png" alt="">
+        </article>
+        <hr>
+        <article id="sobreMim">
+            <div>
+                <h2>Sobre Mim</h2>
                 <p>
                     Meu nome é Lucas Cayres Porto, tenho 15 anos, moro na Freguesia do Ó com minha mãe, meu pai e meu irmão. Estou no 1° ano do ensino médio,
                     na <a href="https://institutojef.org.br/escolas/tech/" target="_blank">GerminareTech</a>, porém sempre estudei no <a target="_blank" href="https://www.santaluciafilippini.com.br/?gad_source=1&gad_campaignid=22771109719&gbraid=0AAAABAWdnOwVuiOP8DfZKBkHcIC7OawKw&gclid=Cj0KCQjw8KrFBhDUARIsAMvIApaHRzWRe_I58GVf3yrg-3EWka-i5BWyNVdzzLxUXuAX7aOXkrFzKBIaAgwJEALw_wcB">Colégio Santa Lucia Filippini</a>
@@ -39,187 +47,177 @@
                     novas, principalmente por estar aprendendo algo que nunca tinha visto e pela proposta do colégio.
                 </p>
             </div>
-            <img id="imagemMinha" src="img/minha-foto.png" alt="">
-        </div>
-    </main>
-    <hr>
-    <section id="curiosidades">
-        <div>
+            <img id="imgSobreMim" src="../../assets/img/lucasCayres/imagemSobreMim.png" alt="">
+        </article>
+        <hr>
+        <article id="curiosidades">
             <h2>Curiosidades</h2>
-        </div>
-        <section id="curiosidades-conteudo">
-            <div id="cima">
-                <p>Nasci no dia 02/02/2010, 5 anos e 1 dia após meu irmão, que nasceu em 01/02/2005.</p>
-            </div>
-            <div id="esquerda">
-                <p>Por 15 anos frequentei um camping de trailers.</p>
-            </div>
-            <div id="direita">
-                <p>Não gosto muito de tomar refrigerantes, prefiro água.</p>
-            </div>
-            <div id="embaixo">
-                <p>Nunca tinha mexido com programação apenas conheci no curso preparatório.</p>
-            </div>
-        </section>
-        
-    </section>
-    <hr>
-    <section id="jaConheci">
-        <h2>Lugares Que Já Conheci</h2>
-        <ol>
-            <section  class="divisaoLugares">
+            <section>
+                <div id="primeiraLinha">
+                    <div class="caixaCuriosidades">
+                        <img class="imgCuriosidade" src="../../assets/img/lucasCayres/polaroidCuriosidades.png" alt="">
+                        <div class="conteudoCuriosidade">
+                            <p>Por 15 anos frequentei um camping de trailers.</p>
+                        </div>
+                    </div>
+                    <div class="caixaCuriosidades">
+                        <img class="imgCuriosidade" src="../../assets/img/lucasCayres/polaroidCuriosidades.png" alt="">
+                        <div class="conteudoCuriosidade">
+                            <p>Nasci no dia 02/02/2010, 5 anos e 1 dia após meu irmão, que nasceu em 01/02/2005.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="segundaLinha">
+                    <div class="caixaCuriosidades">
+                        <img  class="imgCuriosidade" src="../../assets/img/lucasCayres/polaroidCuriosidades.png" alt="">
+                        <div class="conteudoCuriosidade">
+                            <p>Nunca tinha mexido com programação apenas comecei no curso preparatório.</p>
+                        </div>
+                    </div>
+                    <div class="caixaCuriosidades">
+                        <img class="imgCuriosidade" src="../../assets/img/lucasCayres/polaroidCuriosidades.png" alt="">
+                        <div class="conteudoCuriosidade">
+                            <p>Não gosto muito de tomar refrigerantes, prefiro água.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+        <hr>
+        <article id="jaConheci">
+            <h2>Ja Conheci</h2>
+            <ol>
                 <div>
                     <li>
                         Chile
+                        <img src="../../assets/img/lucasCayres/jaConheci/chile.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Chile" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://classic.exame.com/wp-content/uploads/2025/04/GettyImages-1055655978-1.jpg" alt="">
-                </div>
-                <div>
                     <li>
                         Orlando
+                        <img src="../../assets/img/lucasCayres/jaConheci/orlando.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Orlando" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/09/disney-novidades-2023.webp" alt="" >
+                    <li>
+                        Ferenando de Noronha
+                        <img src="../../assets/img/lucasCayres/jaConheci/fernandoNoronha.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Fernando_de_Noronha" target="_blank">Saiba Mais</a>
+                    </li>
                 </div>
                 <div>
                     <li>
-                        Fernando de Noronha
+                        Jericoacoara
+                        <img src="../../assets/img/lucasCayres/jaConheci/jericoacora.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Jijoca_de_Jericoacoara" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41l8VKXKZFvf0qxclDu7AsarKposwC8F5Rw&s" alt="" >
-                </div>
-            </section>
-            <section  class="divisaoLugares">
-                <div>
-                    <li>
-                        Jericoara
-                    </li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Anderps_067.JPG" alt="" > 
-                </div>
-                <div>
                     <li>
                         Natal
+                        <img src="../../assets/img/lucasCayres/jaConheci/natal.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Natal_(Rio_Grande_do_Norte)" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://blog.blablacar.com.br/wp-content/uploads/2023/11/natal-rn.webp" alt="" >
-                </div>
-                <div>
                     <li>
-                        Maceio
+                        Foz do Iguaçu
+                        <img src="../../assets/img/lucasCayres/jaConheci/fozIguaçu.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Foz_do_Igua%C3%A7u" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://www.viagensecaminhos.com/wp-content/uploads/2023/12/maceio-praia-de-pajucara.jpg" alt="" >
                 </div>
-            </section>
-            <section  class="divisaoLugares">
                 <div>
                     <li>
                         Gramado
+                        <img src="../../assets/img/lucasCayres/jaConheci/gramado.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Gramado" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw7fWXrVo9jXJRrzpPEjKaVGnX7Rp27MfnDQ&s" alt="" >
-                </div>
-                <div>
-                    <li>
-                        Rio de Janeiro
-                    </li>
-                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/3b/66/8f.jpg" alt="" >
-                </div>
-                <div>
-                    <li>
-                        Porto Seguro
-                    </li>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/21/4d/46/arraial-d-ajuda-eco-resort.jpg?w=600&h=400&s=1" alt="" >
-                </div>
-            </section>
-            <section class="divisaoLugares">
-                <div>
                     <li>
                         Salvador
+                        <img src="../../assets/img/lucasCayres/jaConheci/salvador.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Salvador" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/43/ac/8f/pelourinho.jpg?w=600&h=-1&s=1" alt="" >
-                </div>
-                <div>
                     <li>
-                        Foz do Iguaçu
+                        Porto Seguro
+                        <img src="../../assets/img/lucasCayres/jaConheci/portoSeguro.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Porto_Seguro" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://www.destino.foz.br/wp-content/uploads/2023/10/image-4-1024x672.jpg" alt="">
                 </div>
-            </section>
-        </ol>
-    </section>
-    <hr>
-    <section id="queroConhecer">
-        <h2>Lugares Que Quero Conhecer</h2>
-        <ul>
-            <section class="divisaoLugares">
+            </ol>
+        </article>
+        <hr>
+        <article id="queroConhecer">
+            <h2>Quero Conhecer</h2>
+            <ol>
                 <div>
                     <li>
                         Portugal
+                        <img src="../../assets/img/lucasCayres/queroConhecer/portugal.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Portugal" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://img.freepik.com/fotos-gratis/vista-aerea-da-famosa-ponte-do-porto-portugal_268835-3550.jpg?semt=ais_hybrid&w=740&q=80" alt="">
-                </div>
-                <div>
                     <li>
-                        Floresta Amazônica
+                        Amazônia
+                        <img src="../../assets/img/lucasCayres/queroConhecer/amazonia.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Amaz%C3%B4nia" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://s5.static.brasilescola.uol.com.br/be/2022/10/vista-floresta-amazonica.jpg" alt="">
-                </div>
-                <div>
                     <li>
                         Lençóis Maranhenses
+                        <img src="../../assets/img/lucasCayres/queroConhecer/maranhao.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVuk7lro3m_9yGQsPCWGos2nFaD_Ih6tWtyA&s" alt="">
                 </div>
-            </section>
-            <section class="divisaoLugares">
                 <div>
                     <li>
                         Egito
+                        <img src="../../assets/img/lucasCayres/queroConhecer/egito.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Egito" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://vidanoegito.com/wp-content/uploads/2019/11/esfinge.jpg?w=1024" alt="">
-                </div>
-                <div>
                     <li>
                         África do Sul
+                        <img src="../../assets/img/lucasCayres/queroConhecer/africaSul.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/%C3%81frica_do_Sul" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://www.infoescola.com/wp-content/uploads/2010/05/cidade-do-cabo_92510755-1000x667.jpg" alt="">
-                </div>
-                <div>
                     <li>
                         Japão
+                        <img src="../../assets/img/lucasCayres/queroConhecer/japao.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Jap%C3%A3o" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://aerotur.com.br/wp-content/uploads/japao.jpg" alt="">
                 </div>
-            </section>
-            <section class="divisaoLugares">
                 <div>
                     <li>
                         Austrália
+                        <img src="../../assets/img/lucasCayres/queroConhecer/australia.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Austr%C3%A1lia" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://www.kangaroo.com.br/images/australia/australia-sydney-vista-aerea-opera-house.jpg" alt="">
-                </div>
-                <div>
                     <li>
                         Holanda
+                        <img src="../../assets/img/lucasCayres/queroConhecer/holanda.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Pa%C3%ADses_Baixos" target="_blank">Saiba Mais</a>
                     </li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQVBvDWOBzKJz9v_RAqVXll0XNWuddVWsbQ&s" alt="">
+                    <li>
+                        Argentina
+                        <img src="../../assets/img/lucasCayres/queroConhecer/argentina.png" alt="">
+                        <a href="https://pt.wikipedia.org/wiki/Argentina" target="_blank">Saiba Mais</a>
+                    </li>
                 </div>
-            </section>
-        </ul>
-    </section>
+            </ol>
+        </article>
+    </main>
     <footer>
-        <div id="contatos">
+        <section id="contatos">
             <div>
-                <img src="img/icon-telefone.png" alt="">
-                <p>11 97350-7059</p>
+                <img src="../../assets/img/lucasCayres/telefone.png" alt="">
+                <a target="_blank" href="tel:+5511973507059">11 97350-7059</a>
             </div>
             <div>
-                <img src="img/icon-email.png" alt="">
-                <a href="mailto:lucas.cayres2010@gmail.com">lucas.cayres2010@gmail.com</a>
+                <img src="../../assets/img/lucasCayres/email.png" alt="">
+                <a target="_blank" href="mailto:lucas.cayres2010@gmail.com">lucas.cayres2010@gmail.com</a>
             </div>
             <div>
-                <img src="img/icon-insta.png" alt="">
-                <a href="https://www.instagram.com/lucasc.porto/">lucasc.porto</a>
+                <img src="../../assets/img/lucasCayres/instagram.png" alt="">
+                <a target="_blank" href="https://www.instagram.com/lucasc.porto/">lucas.cayres2010@gmail.com</a>
             </div>
-        </div>
+        </section>
         <hr>
-        <p>Todos os direitos reservados © Lucas Cayres</p>
+        <section>
+            <p>Todos os direitos reservados © Lucas Cayres  </p>
+        </section>
     </footer>
 </body>
 </html>
