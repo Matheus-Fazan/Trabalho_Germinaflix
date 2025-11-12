@@ -94,10 +94,12 @@ main {
 
 .nome {
     margin: 0.5rem 0 0;
+    font-weight: bold;
 }
 
 .nome span {
     font-size: 0.8rem;
+    font-weight: normal;
 }
 
 /* PLAY =============================================================== */
