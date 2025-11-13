@@ -1,4 +1,4 @@
-/* Estilização da página da série */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -6,7 +6,7 @@ main {
     color: white;
 }
 
-/* Hero Section */
+
 .serie-hero {
     display: flex;
     gap: 3rem;
@@ -51,7 +51,7 @@ main {
     text-align: center;
 }
 
-/* Details Section */
+
 .serie-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,7 +71,7 @@ main {
     font-size: 1.2rem;
 }
 
-/* Trailer Section */
+
 .trailer-section {
     margin-bottom: 3rem;
 }
@@ -93,7 +93,7 @@ main {
     text-align: center;
 }
 
-/* Atores Section */
+
 .atores-section {
     margin-bottom: 3rem;
 }
@@ -145,7 +145,7 @@ main {
     margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 767px) {
     .serie-hero {
         flex-direction: column;
