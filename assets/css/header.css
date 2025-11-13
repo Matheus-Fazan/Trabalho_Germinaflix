@@ -22,6 +22,12 @@ header ul{
     gap: 5rem;
     font-size: large;
 }
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    font-size: large;
+}
 header ul li div{
     background-color: white;
     height: 0.3rem;

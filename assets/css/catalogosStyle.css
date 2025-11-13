@@ -2,6 +2,13 @@ main {
     color: white;
     padding: 1rem 2rem;
 }
+main a,
+main a:visited,
+main a:hover,
+main a:active{
+    color: white;
+    text-decoration: none;
+}
 
 main a,
 main a:visited,
@@ -100,10 +107,12 @@ main a:hover {
 
 .nome {
     margin: 0.5rem 0 0;
+    font-weight: bold;
 }
 
 .nome span {
     font-size: 0.8rem;
+    font-weight: normal;
 }
 
 
