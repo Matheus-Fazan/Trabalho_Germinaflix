@@ -1,71 +1,201 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --azul-escuro: #0a1e40;
+    --azul-claro: #b3d9ff;
+    --preto: #000;
+    --branco: #fff;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
-}
-
-
-header {
-    background: #222;
-    color: white;
-    padding: 20px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: var(--azul-escuro);
+    color: var(--branco);
+    line-height: 1.6;
+    padding-top: 100px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--preto);
+    color: var(--branco);
     text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+    padding: 0.8rem 0.5rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-header nav a {
-    color: white;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: var(--azul-claro);
     text-decoration: none;
     font-weight: bold;
-}
-
-
-.bloco {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 15px;
-    border: 2px solid #ccc;
-}
-
-
-hr {
-    margin: 30px auto;
-    width: 90%;
-    max-width: 700px;
-    border: none;
-    border-top: 2px solid #ddd;
-}
-
-
-footer {
-    background: #222;
-    color: white;
+    transition: 0.2s;
+  }
+  
+  nav a:hover {
+    color: var(--branco);
+  }
+  
+  main {
+    padding: 2rem 5vw;
+  }
+  
+  .bloco {
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-ol, ul {
-    margin-left: 20px;
-}
+    padding: 1rem;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .foto {
+    width: 30vw;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--azul-claro);
+  }
+  
+  .info {
+    text-align: left;
+    background: var(--azul-claro);
+    color: var(--preto);
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 180px;
+  }
+  
+  .descricao {
+    margin-top: 1rem;
+  }
+  
+  h1, h2, h3 {
+    color: var(--azul-claro);
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: var(--azul-claro);
+    color: var(--preto);
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: fit-content;
+  }
+  
+  .gostos-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .gostos-container div {
+    flex: 1 1 250px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .galeria figure {
+    background: var(--branco);
+    color: var(--preto);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 35vw;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .galeria figure:hover {
+    transform: scale(1.05);
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  
+  .galeria figcaption {
+    padding: 0.5rem;
+    font-weight: bold;
+    background: var(--azul-claro);
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid var(--azul-claro);
+    margin: 2rem 0;
+  }
+  
+  footer {
+    background: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    .foto {
+      width: 50vw;
+    }
+  
+    .galeria figure {
+      width: 70vw;
+    }
+  
+    ul li {
+      width: 80%;
+    }
+  
+    .gostos-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
