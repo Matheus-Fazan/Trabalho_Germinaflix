@@ -2,6 +2,13 @@ main {
     color: white;
     padding: 1rem 2rem;
 }
+main a,
+main a:visited,
+main a:hover,
+main a:active{
+    color: white;
+    text-decoration: none;
+}
 
 /* HERO =============================================================== */
 .hero {
