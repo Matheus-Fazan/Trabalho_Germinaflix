@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --cor-principal: #1D62BC;
+    --cor-fundo: #1E1F24;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: var(--cor-principal);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+header h1{
+    font-size: 2.5rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+header a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+main{
+    padding: 0rem 3rem;
+}
+main hr{
+    margin: 2rem 0;
+    border: 0.1rem solid var(--cor-principal);
+    border-radius: 0.3rem;
+}
+
+#inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+#inicio > div,
+#imagemMinha{
+    height: 86vh;
+}
+#inicio h1{
+    font-size:6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#imagemMinha{
+    
+    margin-top: 0;
+}
+#imagemFamilia{
+    margin-top: 0; 
+}
+
+#sobreMim a{
+    color: var(--cor-principal);
+}
+#sobreMim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#sobreMim h2,
+#jaConheci h2,
+#queroConhecer h2,
+#curiosidades h2{
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
+    margin-top: 1.5rem;
+}
+#sobreMim p{
+    font-size: 2rem;
+    width: 80%;
+}
+#sobreMim > div{
+    width: 55%;
+}
+#sobreMim > div,
+#imgSobreMim{
+    height: 80vh;
+}
+
+#curiosidades{
+    background: url("../../assets/img/lucasCayres/fundoCuriosidades.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caixaCuriosidades{
+    position: relative;
+}
+.caixaCuriosidades div {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 35%;
+    left: 20%;
+    width: 10rem;
+    opacity: 0;
+}
+.imgCuriosidade:hover + .conteudoCuriosidade,
+.conteudoCuriosidade:hover {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#primeiraLinha{
+    display: flex;
+    width: 70rem;
+    justify-content: space-between;
+}
+#segundaLinha{
+    display: flex;
+    margin-left: 23rem;
+    justify-content: space-between;
+}
+
+#jaConheci,
+#queroConhecer{
+    background: url("../img/lucasCayres/fundoLocais.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#jaConheci ol,
+#queroConhecer ol{
+    list-style: none;
+}
+#jaConheci ol div,
+#queroConhecer ol div{
+    display: flex;
+    justify-content: space-between;
+}
+#jaConheci ol li,
+#queroConhecer ol li{
+    font-weight: 500;
+    margin: 1rem 0.5rem ;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#jaConheci ol li a,
+#queroConhecer ol li a{
+    color: white;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+#jaConheci ol li img,
+#queroConhecer ol li img{
+    margin: 0.5rem 0;
+}
+
+
+footer {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 0.5rem 0;
+}
+footer a{
+    color: white;
+}
+footer hr{
+    margin: 1.3rem 0 0.5rem 0;
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+    width: 90%;
+}
+#contatos{
+    width: 85%;
+    justify-content: space-between;
+    display: flex;
+}
+#contatos div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#contatos div img{
+    width: 2rem;
+    height: 2rem;
+}
