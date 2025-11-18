@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Mim - Matheus Fazan</title>
-  <link rel="stylesheet" href="matheusFazanStyle.css">
+  <link rel="stylesheet" href="..\matheusFazan\assets\css\matheusFazanStyle.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Sobre Mim - Matheus Fazan</h1>
-    <nav>
+  <header class="cabecalho-principal">
+    <a href="../sobreNos.html" class="link-titulo">
+      <h1>Sobre Mim - Matheus Fazan</h1>
+    </a>
+    <nav class="menu-navegacao">
       <a href="#apresentacao">Apresentação</a>
       <a href="#linguagens">Linguagens</a>
       <a href="#objetivos">Objetivos</a>
@@ -20,136 +23,155 @@
     </nav>
   </header>
 
-  <main>
-    <section id="apresentacao" class="bloco apresentacao">
-      <div class="perfil">
-        <img src="minha-foto.jpg" alt="Foto de Matheus Fazan" class="foto">
-        <div class="info">
+  <main class="conteudo-principal">
+
+    <!-- APRESENTAÇÃO -->
+    <section id="apresentacao" class="secao-conteudo secao-apresentacao">
+      <div class="cartao-perfil">
+        <img src="..\matheusFazan\assets\img\matheusfazan.jpeg" alt="Foto de Matheus Fazan" class="foto-perfil">
+        <div class="informacoes-pessoais">
           <p><strong>Nome:</strong> Matheus Fazan</p>
           <p><strong>Idade:</strong> 16 anos</p>
           <p><strong>Cidade:</strong> São Paulo - SP</p>
           <p><strong>Escola:</strong> Germinare Tech</p>
         </div>
       </div>
-      <p class="descricao">Sou estudante apaixonado por tecnologia e desenvolvimento. Gosto de aprender e criar soluções que realmente funcionam.</p>
+
+      <p class="texto-descricao">
+        Olá, sou o Matheus. Nasci em São Paulo, morei em Taboão da Serra até 2020, antes de entrar aqui, estudava no SESI Vila Leopoldina.  
+        Entrei nessa escola com objetivo de me preparar para meu futuro.  
+        Atualmente sou estagiário Analista de Dados no PicPay.
+      </p>
     </section>
 
-    <hr>
+    <hr class="divisor-secao">
 
-    <section id="linguagens" class="bloco">
+    <!-- LINGUAGENS -->
+    <section id="linguagens" class="secao-conteudo">
       <h2>Linguagens que programo</h2>
-      <div class="galeria">
-        <figure>
-          <img src="..\matheusFazan\img\logoHtml.png" alt="HTML">
+      <div class="galeria-linguagens">
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoHtml.png" alt="HTML">
           <figcaption>HTML</figcaption>
         </figure>
-        <figure>
-          <img src="..\matheusFazan\img\logoCss.png" alt="CSS">
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoCss.png" alt="CSS">
           <figcaption>CSS</figcaption>
         </figure>
-        <figure>
-          <img src="..\matheusFazan\img\logoJava.png" alt="Java">
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoJava.png" alt="Java">
           <figcaption>Java</figcaption>
         </figure>
-        <figure>
-          <img src="..\matheusFazan\img\logoR.jpg" alt="R">
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoR.jpg" alt="R">
           <figcaption>R</figcaption>
         </figure>
-        <figure>
-          <img src="..\matheusFazan\img\logoPython.jpg" alt="Python">
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoPython.jpg" alt="Python">
           <figcaption>Python</figcaption>
         </figure>
-        <figure>
-          <img src="..\matheusFazan\img\logoPostgreSQL.png" alt="PostgreSQL">
-          <figcaption>PostgreSQ</figcaption>
+        <figure class="item-linguagem">
+          <img src="..\matheusFazan\assets\img\logoPostgreSQL.png" alt="PostgreSQL">
+          <figcaption>PostgreSQL</figcaption>
         </figure>
       </div>
     </section>
 
-    <hr>
+    <hr class="divisor-secao">
 
-    <section id="objetivos" class="bloco">
+    <!-- OBJETIVOS -->
+    <section id="objetivos" class="secao-conteudo">
       <h2>Meus Objetivos</h2>
-      <ul>
-        <li>Ganhar massa muscular e melhorar mobilidade.</li>
-        <li>Comprar uma casa e um carro próprios.</li>
-        <li>Alcançar renda passiva de R$5.000/mês até os 25 anos.</li>
+      <ul class="lista-objetivos">
+        <li>Ser um analista de dados sênior.</li>
+        <li>Ter uma Touareg ou Passat.</li>
+        <li>Ter uma casa pequena.</li>
       </ul>
     </section>
 
-    <hr>
+    <hr class="divisor-secao">
 
-    <section id="gostos" class="bloco">
+    <!-- GOSTOS -->
+    <section id="gostos" class="secao-conteudo">
       <h2>O que gosto e não gosto</h2>
-      <div class="gostos-container">
-        <div>
+      <div class="container-gostos">
+
+        <div class="coluna-gostos">
           <h3>Gosto</h3>
-          <ul>
-            <li>Musculação</li>
-            <li>Tecnologia</li>
-            <li>Desenvolvimento de sistemas</li>
-            <li>Aprender coisas novas</li>
-          </ul>
+          <ol class="lista-itens">
+            <li>Hardware de computadores</li>
+            <li>Praticar esportes</li>
+            <li>Jogar videogame</li>
+          </ol>
         </div>
-        <div>
+
+        <div class="coluna-gostos">
           <h3>Não gosto</h3>
-          <ul>
-            <li>Desorganização</li>
-            <li>Atrasos</li>
-            <li>Comidas com peixe e frutos do mar</li>
-          </ul>
+          <ol class="lista-itens">
+            <li>Corintianos</li>
+            <li>Altura</li>
+            <li>Linux</li>
+          </ol>
         </div>
+
       </div>
     </section>
 
-    <hr>
+    <hr class="divisor-secao">
 
-    <section id="locais" class="bloco">
+    <!-- LOCAIS -->
+    <section id="locais" class="secao-conteudo">
       <h2>Lugares que já fui</h2>
-      <div class="galeria">
-        <figure>
-          <img src="..\matheusFazan\img\Franca.jpg" alt="Franca">
+      <div class="galeria-lugares">
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Franca.jpg" alt="França">
           <figcaption>França</figcaption>
         </figure>
-        <figure>
-          <img src="lugar2.jpg" alt="Rio de Janeiro">
-          <figcaption>Rio de Janeiro - RJ</figcaption>
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Floripa.jpg" alt="Floripa">
+          <figcaption>Florianópolis</figcaption>
+        </figure>
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Gramado.jpg" alt="Gramado">
+          <figcaption>Gramado - RS</figcaption>
         </figure>
       </div>
 
       <h2>Lugares que quero conhecer</h2>
-      <div class="galeria">
-        <figure>
-          <img src="eua.jpg" alt="EUA">
-          <figcaption>Estados Unidos</figcaption>
+      <div class="galeria-lugares">
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Finlandia.jpg" alt="Finlândia">
+          <figcaption>Finlândia</figcaption>
         </figure>
-        <figure>
-          <img src="japao.jpg" alt="Japão">
-          <figcaption>Japão</figcaption>
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Suica.jpg" alt="Suíça">
+          <figcaption>Suíça</figcaption>
         </figure>
-        <figure>
-          <img src="europa.jpg" alt="Europa">
-          <figcaption>Europa</figcaption>
+        <figure class="item-lugar">
+          <img src="..\matheusFazan\assets\img\Alemanha.jpg" alt="Alemanha">
+          <figcaption>Alemanha</figcaption>
         </figure>
       </div>
     </section>
 
-    <hr>
+    <hr class="divisor-secao">
 
-    <section id="curiosidades" class="bloco">
+    <!-- CURIOSIDADES -->
+    <section id="curiosidades" class="secao-conteudo">
       <h2>Curiosidades</h2>
-      <ul>
-        <li>Sou alérgico a peixes e frutos do mar.</li>
-        <li>Faço musculação, natação e muay thai.</li>
-        <li>Quero atingir independência financeira até os 25 anos.</li>
+      <ul class="lista-curiosidades">
+        <li>Sou vascaíno ❤️</li>
+        <li>Já fui medalhista da OBI</li>
+        <li>Tecnologia vem de família</li>
+        <li>Minha comida preferida é Parmegiana</li>
       </ul>
     </section>
+
   </main>
 
-  <footer>
-    <p>© 2025 Matheus Fazan — Desenvolvido por mim</p>
+  <footer class="rodape-principal">
+    <p>© 2025 Matheus Fazan – Direitos Reservados</p>
   </footer>
-
 
 </body>
 </html>
