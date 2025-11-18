@@ -1,6 +1,4 @@
-/* ====================================================== */
-/* VARIÁVEIS DE CORES */
-/* ====================================================== */
+/* Variáveis de cores */
 :root {
   --azul-escuro: #0a1e40;
   --azul-claro: #b3d9ff;
@@ -8,9 +6,7 @@
   --branco: #fff;
 }
 
-/* ====================================================== */
-/* RESET E CONFIGURAÇÕES GLOBAIS */
-/* ====================================================== */
+/* Reset e estilos globais */
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +21,7 @@ body {
   padding-top: 100px;
 }
 
-/* ====================================================== */
-/* CABEÇALHO PRINCIPAL */
-/* ====================================================== */
+/* Cabeçalho */
 .cabecalho-principal {
   position: fixed;
   top: 0;
@@ -51,7 +45,7 @@ body {
   color: inherit;
 }
 
-/* Menu de Navegação */
+/* Menu de navegação */
 .menu-navegacao {
   display: flex;
   justify-content: center;
@@ -70,9 +64,7 @@ body {
   color: var(--branco);
 }
 
-/* ====================================================== */
-/* CONTEÚDO PRINCIPAL */
-/* ====================================================== */
+/* Conteúdo principal */
 .conteudo-principal {
   padding: 2rem 5vw;
 }
@@ -82,9 +74,7 @@ body {
   padding: 1rem;
 }
 
-/* ====================================================== */
-/* SEÇÃO DE APRESENTAÇÃO */
-/* ====================================================== */
+/* Seção de apresentação */
 .cartao-perfil {
   display: flex;
   align-items: center;
@@ -121,17 +111,13 @@ body {
   border-radius: 8px;
 }
 
-/* ====================================================== */
-/* TÍTULOS */
-/* ====================================================== */
+/* Títulos */
 h1, h2, h3 {
   color: var(--azul-claro);
   margin-bottom: 0.5rem;
 }
 
-/* ====================================================== */
-/* LISTAS GERAIS */
-/* ====================================================== */
+/* Listas */
 ul, ol {
   margin: 1rem 0;
   padding-left: 1.2rem;
@@ -151,9 +137,7 @@ ul, ol {
   list-style: none;
 }
 
-/* ====================================================== */
-/* SEÇÃO DE GOSTOS */
-/* ====================================================== */
+/* Seção de gostos */
 .container-gostos {
   display: flex;
   justify-content: center;
@@ -166,9 +150,7 @@ ul, ol {
   flex: 1 1 250px;
 }
 
-/* ====================================================== */
-/* GALERIA DE LUGARES */
-/* ====================================================== */
+/* Galeria de lugares */
 .galeria-lugares {
   display: flex;
   flex-wrap: wrap;
@@ -204,9 +186,7 @@ ul, ol {
   background: var(--azul-claro);
 }
 
-/* ====================================================== */
-/* GALERIA DE LINGUAGENS DE PROGRAMAÇÃO */
-/* ====================================================== */
+/* Galeria de linguagens */
 .galeria-linguagens {
   display: flex;
   flex-wrap: wrap;
@@ -243,18 +223,14 @@ ul, ol {
   background: var(--azul-claro);
 }
 
-/* ====================================================== */
-/* DIVISORES DE SEÇÃO */
-/* ====================================================== */
+/* Divisores */
 .divisor-secao {
   border: none;
   border-top: 2px solid var(--azul-claro);
   margin: 2rem 0;
 }
 
-/* ====================================================== */
-/* RODAPÉ PRINCIPAL */
-/* ====================================================== */
+/* Rodapé */
 .rodape-principal {
   background: var(--preto);
   color: var(--branco);
@@ -264,9 +240,7 @@ ul, ol {
   font-size: 0.9rem;
 }
 
-/* ====================================================== */
-/* RESPONSIVIDADE */
-/* ====================================================== */
+/* Responsivo */
 @media (max-width: 600px) {
   .foto-perfil {
     width: 60vw;
