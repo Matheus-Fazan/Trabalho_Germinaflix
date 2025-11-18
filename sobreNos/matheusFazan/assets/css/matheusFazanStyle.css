@@ -1,0 +1,306 @@
+/* ====================================================== */
+/* VARIÁVEIS DE CORES */
+/* ====================================================== */
+:root {
+  --azul-escuro: #0a1e40;
+  --azul-claro: #b3d9ff;
+  --preto: #000;
+  --branco: #fff;
+}
+
+/* ====================================================== */
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+/* ====================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--azul-escuro);
+  color: var(--branco);
+  line-height: 1.6;
+  padding-top: 100px;
+}
+
+/* ====================================================== */
+/* CABEÇALHO PRINCIPAL */
+/* ====================================================== */
+.cabecalho-principal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--preto);
+  color: var(--branco);
+  text-align: center;
+  padding: 0.8rem 0.5rem;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.cabecalho-principal h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.link-titulo {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Menu de Navegação */
+.menu-navegacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-navegacao a {
+  color: var(--azul-claro);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menu-navegacao a:hover {
+  color: var(--branco);
+}
+
+/* ====================================================== */
+/* CONTEÚDO PRINCIPAL */
+/* ====================================================== */
+.conteudo-principal {
+  padding: 2rem 5vw;
+}
+
+.secao-conteudo {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ====================================================== */
+/* SEÇÃO DE APRESENTAÇÃO */
+/* ====================================================== */
+.cartao-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.foto-perfil {
+  width: 35vw;
+  max-width: 260px;
+  border-radius: 10%;
+  border: 3px solid var(--azul-claro);
+}
+
+.informacoes-pessoais {
+  text-align: left;
+  background: var(--azul-claro);
+  color: var(--preto);
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 180px;
+}
+
+.texto-descricao {
+  margin-top: 1rem;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ====================================================== */
+/* TÍTULOS */
+/* ====================================================== */
+h1, h2, h3 {
+  color: var(--azul-claro);
+  margin-bottom: 0.5rem;
+}
+
+/* ====================================================== */
+/* LISTAS GERAIS */
+/* ====================================================== */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  list-style-position: inside;
+}
+
+.lista-objetivos li,
+.lista-curiosidades li,
+.lista-itens li {
+  background: var(--azul-claro);
+  color: var(--preto);
+  margin: 0.4rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  width: fit-content;
+  text-align: left;
+  list-style: none;
+}
+
+/* ====================================================== */
+/* SEÇÃO DE GOSTOS */
+/* ====================================================== */
+.container-gostos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.coluna-gostos {
+  flex: 1 1 250px;
+}
+
+/* ====================================================== */
+/* GALERIA DE LUGARES */
+/* ====================================================== */
+.galeria-lugares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.item-lugar {
+  background: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30vw;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.item-lugar:hover {
+  transform: scale(1.05);
+}
+
+.item-lugar img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.item-lugar figcaption {
+  padding: 0.5rem;
+  font-weight: bold;
+  background: var(--azul-claro);
+}
+
+/* ====================================================== */
+/* GALERIA DE LINGUAGENS DE PROGRAMAÇÃO */
+/* ====================================================== */
+.galeria-linguagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.item-linguagem {
+  background: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 0 1 150px;
+  max-width: 150px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.item-linguagem:hover {
+  transform: scale(1.05);
+}
+
+.item-linguagem img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: var(--branco);
+}
+
+.item-linguagem figcaption {
+  padding: 0.5rem;
+  font-weight: bold;
+  background: var(--azul-claro);
+}
+
+/* ====================================================== */
+/* DIVISORES DE SEÇÃO */
+/* ====================================================== */
+.divisor-secao {
+  border: none;
+  border-top: 2px solid var(--azul-claro);
+  margin: 2rem 0;
+}
+
+/* ====================================================== */
+/* RODAPÉ PRINCIPAL */
+/* ====================================================== */
+.rodape-principal {
+  background: var(--preto);
+  color: var(--branco);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ====================================================== */
+/* RESPONSIVIDADE */
+/* ====================================================== */
+@media (max-width: 600px) {
+  .foto-perfil {
+    width: 60vw;
+  }
+
+  .item-lugar {
+    width: 70vw;
+    max-width: 70vw;
+  }
+
+  .item-linguagem {
+    flex: 0 1 45vw;
+    max-width: 45vw;
+  }
+
+  .lista-objetivos li,
+  .lista-curiosidades li,
+  .lista-itens li {
+    width: 80%;
+  }
+
+  .container-gostos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informacoes-pessoais {
+    width: 80%;
+    text-align: center;
+  }
+
+  .texto-descricao {
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+  }
+}
