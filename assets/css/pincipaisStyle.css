@@ -1,40 +1,45 @@
-
-main {
+/* Conteúdo da página */
+.conteudo-pagina {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     color: white;
 }
 
-
-.serie-hero {
+/* Banner do filme/série */
+.banner-filme,
+.banner-serie {
     display: flex;
     gap: 3rem;
     margin-bottom: 2rem;
 }
 
-.serie-info {
+.informacoes-filme,
+.informacoes-serie {
     flex: 1;
 }
 
-.serie-info h1 {
+.informacoes-filme h1,
+.informacoes-serie h1 {
     font-size: 3rem;
     font-weight: 700;
     margin: 0 0 1.5rem 0;
 }
 
-.serie-info p {
+.informacoes-filme p,
+.informacoes-serie p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     text-align: justify;
 }
 
-.serie-poster {
+/* Poster */
+.container-poster {
     flex: 0 0 350px;
 }
 
-.placeholder-image {
+.imagem-poster {
     background-color: #D9D9D9;
     border-radius: 1rem;
     height: 400px;
@@ -43,78 +48,79 @@ main {
     justify-content: center;
 }
 
-.placeholder-image p {
+.imagem-poster p {
     color: black;
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
 }
 
-
-.serie-details {
+/* Detalhes do filme/série */
+.detalhes-filme,
+.detalhes-serie {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 3rem;
     margin-bottom: 3rem;
 }
 
-.detail-item {
+.item-detalhe {
     font-size: 1.1rem;
 }
 
-.detail-item strong {
+.item-detalhe strong {
     font-weight: 600;
 }
 
-.stars {
+.estrelas-avaliacao {
     font-size: 1.2rem;
 }
 
-
-.trailer-section {
+/* Seção do trailer */
+.secao-trailer {
     margin-bottom: 3rem;
 }
 
-.trailer-placeholder {
+.video-trailer {
     background-color: #D9D9D9;
     border-radius: 1rem;
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.trailer-placeholder p {
+.video-trailer p {
     color: black;
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
 }
 
-
-.atores-section {
+/* Seção de elenco */
+.secao-elenco {
     margin-bottom: 3rem;
 }
 
-.atores-section h2 {
+.secao-elenco h2 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.atores-grid {
+.grade-atores {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
 }
 
-.ator-card {
+/* Cartões dos atores */
+.cartao-ator {
     width: 100%;
 }
 
-.ator-image {
+.foto-ator {
     background-color: #D9D9D9;
     border-radius: 1rem;
     width: 100%;
@@ -124,100 +130,116 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.ator-image p {
+.foto-ator p {
     color: black;
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
 }
 
-.ator-nome {
+.nome-ator {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.5rem 0 0.2rem 0;
 }
 
-.ator-personagem {
+.personagem-ator {
     font-size: 0.85rem;
     font-weight: 300;
     margin: 0;
 }
-.atores-section a,
-.atores-section a:visited,
-.atores-section a:hover,
-.atores-section a:active{
+
+/* Links dos atores */
+.link-ator,
+.link-ator:visited,
+.link-ator:hover,
+.link-ator:active {
     text-decoration: none;
     color: white;
 }
 
+.secao-elenco a,
+.secao-elenco a:visited,
+.secao-elenco a:hover,
+.secao-elenco a:active {
+    text-decoration: none;
+    color: white;
+}
 
+/* Responsivo - Tablets */
 @media (max-width: 767px) {
-    .serie-hero {
+    .banner-filme,
+    .banner-serie {
         flex-direction: column;
         align-items: center;
     }
 
-    .serie-poster {
+    .container-poster {
         flex: 0 0 auto;
         width: 100%;
         max-width: 350px;
     }
 
-    .serie-info h1 {
+    .informacoes-filme h1,
+    .informacoes-serie h1 {
         font-size: 2rem;
     }
 
-    .serie-details {
+    .detalhes-filme,
+    .detalhes-serie {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .atores-grid {
+    .grade-atores {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
 }
 
+/* Responsivo - Mobile */
 @media (max-width: 425px) {
-    main {
+    .conteudo-pagina {
         padding: 1rem;
     }
 
-    .serie-info h1 {
+    .informacoes-filme h1,
+    .informacoes-serie h1 {
         font-size: 1.5rem;
     }
 
-    .serie-info p {
+    .informacoes-filme p,
+    .informacoes-serie p {
         font-size: 0.9rem;
     }
 
-    .detail-item {
+    .item-detalhe {
         font-size: 0.9rem;
     }
 
-    .atores-section h2 {
+    .secao-elenco h2 {
         font-size: 2rem;
     }
 
-    .atores-grid {
+    .grade-atores {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
-    .ator-card {
+    .cartao-ator {
         max-width: 120px;
     }
 
-    .ator-image {
+    .foto-ator {
         width: 100%;
         height: 150px;
     }
 
-    .ator-nome {
+    .nome-ator {
         font-size: 0.9rem;
     }
 
-    .ator-personagem {
+    .personagem-ator {
         font-size: 0.75rem;
     }
 }

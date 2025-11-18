@@ -1,23 +1,19 @@
+/* Estilos gerais do main */
 main {
     color: white;
     padding: 1rem 2rem;
 }
+
 main a,
 main a:visited,
 main a:hover,
-main a:active{
+main a:active {
     color: white;
     text-decoration: none;
 }
 
-main a,
-main a:visited,
-main a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-.hero {
+/* Banner principal */
+.banner-destaque {
     position: relative;
     width: 100%;
     height: 35rem;
@@ -32,8 +28,7 @@ main a:hover {
     overflow: hidden;
 }
 
-
-.hero::after {
+.banner-destaque::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -46,35 +41,34 @@ main a:hover {
     z-index: 1;
 }
 
-.hero-content {
+.conteudo-banner {
     position: relative;
     z-index: 2;
 }
 
-
-.hero h1 {
+.banner-destaque h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-.hero p {
+.banner-destaque p {
     margin: 0.5rem 0;
 }
 
-.hero .trailer {
+.banner-destaque .trailer {
     margin-top: 8rem;
     display: block;
 }
 
-
-.sec-title {
+/* Títulos das seções */
+.titulo-secao {
     text-align: center;
     font-size: 2rem;
     margin: 3rem 0 2rem 0;
 }
 
-
-.grid-cards {
+/* Grade de cartões */
+.grade-cartoes {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -83,15 +77,16 @@ main a:hover {
     padding: 0 1rem;
 }
 
-.card {
+.cartao-filme,
+.cartao-serie {
     flex: 0 1 calc(20% - 1.5rem);
     max-width: calc(20% - 1.5rem);
     min-width: 160px;
     position: relative;
 }
 
-
-.thumb {
+/* Miniaturas */
+.miniatura {
     width: 100%;
     aspect-ratio: 3/4;
     border-radius: 0.5rem;
@@ -99,24 +94,27 @@ main a:hover {
     background: #111;
 }
 
-.thumb img {
+.miniatura img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nome {
+/* Títulos dos filmes/séries */
+.titulo-filme,
+.titulo-serie {
     margin: 0.5rem 0 0;
     font-weight: bold;
 }
 
-.nome span {
+.titulo-filme span,
+.titulo-serie span {
     font-size: 0.8rem;
     font-weight: normal;
 }
 
-
-.play {
+/* Botão play */
+.botao-reproduzir {
     position: absolute;
     bottom: 0;
     right: 0.5rem;
@@ -127,14 +125,14 @@ main a:hover {
     justify-content: center;
 }
 
-.play img {
+.botao-reproduzir img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-
-.grid-recomend {
+/* Grade de recomendações */
+.grade-recomendacoes {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -143,14 +141,14 @@ main a:hover {
     padding: 0 1rem;
 }
 
-.card-big {
+.cartao-destaque {
     flex: 0 1 calc(50% - 2rem);
     max-width: calc(50% - 2rem);
     min-width: 300px;
     position: relative;
 }
 
-.thumb-big {
+.miniatura-destaque {
     width: 100%;
     aspect-ratio: 16/9;
     background: #111;
@@ -158,38 +156,41 @@ main a:hover {
     overflow: hidden;
 }
 
-.thumb-big img {
+.miniatura-destaque img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card-big .play {
+.cartao-destaque .botao-reproduzir {
     right: 0.5rem;
 }
 
-
+/* Responsivo */
 @media (max-width: 900px) {
-    .card {
+    .cartao-filme,
+    .cartao-serie {
         flex: 0 1 calc(33.3% - 1.5rem);
         max-width: calc(33.3% - 1.5rem);
     }
 
-    .card-big {
+    .cartao-destaque {
         flex: 0 1 100%;
         max-width: 100%;
     }
 }
 
 @media (max-width: 600px) {
-    .card {
+    .cartao-filme,
+    .cartao-serie {
         flex: 0 1 calc(50% - 1.5rem);
         max-width: calc(50% - 1.5rem);
     }
 }
 
 @media (max-width: 400px) {
-    .card {
+    .cartao-filme,
+    .cartao-serie {
         flex: 0 1 100%;
         max-width: 100%;
     }

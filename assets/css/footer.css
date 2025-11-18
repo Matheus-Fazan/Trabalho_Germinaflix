@@ -1,4 +1,5 @@
-footer{
+/* Rodapé */
+footer {
     text-align: center;
     background-color: #1F2862;
     color: white;
@@ -7,13 +8,15 @@ footer{
     margin-top: 2rem;
 }
 
-@media (max-width: 505px){
-    footer{
+/* Responsivo */
+@media (max-width: 505px) {
+    footer {
         font-size: 0.7rem
     }
 }
-@media (max-width: 357px){
-    footer{
+
+@media (max-width: 357px) {
+    footer {
         font-size: 0.5rem
     }
 }

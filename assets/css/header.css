@@ -1,5 +1,5 @@
-/* Estilização do header */
-header{
+/* Header */
+header {
     background-image: var(--gradiante-princiapal);
     display: flex;
     align-items: center;
@@ -13,56 +13,60 @@ header{
     left: 0;
     z-index: 100;
 }
-header img{
+
+header img {
     width: 5.5rem;
 }
-header ul{
+
+/* Menu de navegação */
+header ul {
     display: flex;
     list-style: none;
     gap: 5rem;
     font-size: large;
 }
-header ul{
-    display: flex;
-    list-style: none;
-    gap: 5rem;
-    font-size: large;
-}
-header ul li div{
+
+header ul li div {
     background-color: white;
     height: 0.3rem;
     border-radius: 0.5rem;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: white;
 }
 
+/* Responsivo - Tablets */
 @media (max-width: 767px) {
-    header{
-        
+    header {
         text-align: center;
         display: block;   
         padding: 0;
     }
-    header nav{
+    
+    header nav {
         display: flex;
         justify-content: center;
     }
-    header ul{
+    
+    header ul {
         font-size: medium;
         gap: 2rem;
         margin-right: 2rem;
     }
 }
+
+/* Responsivo - Mobile */
 @media (max-width: 425px) {
-    header{
+    header {
         text-align: center;
         display: block;   
         padding: 0;
         margin: 0.6rem;
     }
-    header ul{
+    
+    header ul {
         font-size: 0.8rem;
         gap: 1rem;
     }
