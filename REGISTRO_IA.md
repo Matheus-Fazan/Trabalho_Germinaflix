@@ -5,6 +5,7 @@ Ferramenta: Codex (OpenAI). Este registro começa com a preparação do site; ho
 | Interação | Prompt exato | Resultado da IA | Problema ou avaliação | Alteração feita e por quem | Evidência |
 | --- | --- | --- | --- | --- | --- |
 | Preparação do site | Ver prompt completo abaixo. | Caminhos corrigidos e verificador de recursos criado. | Dois caminhos de fundo no CSS não existiam; havia favicons absolutos e barras invertidas. Uma substituição inicial afetou cinco caminhos de logo, identificados e corrigidos pela verificação. | Codex alterou caminhos e criou `scripts/verificar_recursos.py`. Nenhuma alteração manual pelo aluno foi observada nesta etapa. | Verificação final: 168 referências locais e 0 erros. Teste temporário: referência `imagem-inexistente-para-teste.png` identificada em `teste-recurso-temporario.html`, 169 referências, 1 erro e saída 1; arquivo removido e verificação novamente aprovada. Resultados locais, sem comprovação de publicação. |
+| Pipeline CI/CD | Ver prompt completo abaixo. | Codex criou o workflow e documentou seu uso no README. | Os históricos local e remoto divergiram; o conflito no registro foi resolvido preservando a versão local. | Codex configurou CI em pushes e PRs para `main` e CD após CI bem-sucedida em push para `main`. | `python scripts/verificar_recursos.py`: 168 referências locais, 0 erros. Execução remota e publicação ainda não comprovadas no momento do registro. |
 
 ## Prompt completo — preparação do site
 
@@ -17,3 +18,21 @@ Ferramenta: Codex (OpenAI). Este registro começa com a preparação do site; ho
 > Execute a verificação e faça um teste temporário de falha com uma referência inexistente. Depois, remova a alteração de teste e confirme que a validação passa.
 >
 > Registre este prompt, os resultados reais, os problemas, as alterações, quem as realizou e as evidências em uma tabela de uso de IA. Não invente informações.
+
+## Prompt completo — pipeline CI/CD
+
+> Continue na branch existente `preparar-github-pages`. Antes de alterar arquivos, confira o estado do Git e o PR existente; preserve alterações que não sejam suas.
+>
+> Crie `.github/workflows/ci-cd.yml` para o Cayres Flix com estes requisitos:
+>
+> - Executar a CI em `push` para `main` e em `pull_request` direcionado a `main`.
+> - Fazer checkout, configurar o ambiente necessário e instalar dependências apenas quando necessário.
+> - Executar `scripts/verificar_recursos.py` e falhar se a verificação encontrar problemas.
+> - Executar o CD somente após um `push` na `main` e somente se a CI tiver terminado com sucesso.
+> - Publicar o site estático no GitHub Pages usando GitHub Actions e as permissões necessárias.
+>
+> Atualize o README com instruções de execução local, validação, funcionamento da pipeline e configuração necessária do Pages. Execute as verificações locais possíveis.
+>
+> Acrescente este prompt e os resultados reais ao registro de uso de IA. Faça commit na branch existente e envie-o ao GitHub, atualizando o mesmo PR. Acompanhe a CI do PR e confirme que o job de publicação não executou nesse evento. Se houver falha, investigue e corrija na mesma branch.
+>
+> Apresente os links e aguarde minha revisão. Não faça merge.
