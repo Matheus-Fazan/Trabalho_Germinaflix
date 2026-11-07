@@ -99,7 +99,7 @@ main hr{
 }
 
 #curiosidades{
-    background: url("../../assets/img/lucasCayres/fundoCuriosidades.png");
+    background: url("../../../assets/img/lucasCayres/fundoCuriosidades.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ main hr{
 
 #jaConheci,
 #queroConhecer{
-    background: url("../img/lucasCayres/fundoLocais.png");
+    background: url("../../../assets/img/lucasCayres/fundoLocais.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
