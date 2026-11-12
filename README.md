@@ -18,7 +18,7 @@ Abra `http://localhost:8000/`. Para interromper o servidor, pressione Ctrl+C.
 python scripts/verificar_recursos.py
 ```
 
-O script usa somente a biblioteca padrão do Python e verifica o `index.html` e referências locais em HTML e CSS, inclusive a capitalização dos nomes. O comando retorna erro se encontrar um recurso ausente ou um caminho incompatível com o projeto. Referências externas não são verificadas.
+O script usa somente a biblioteca padrão do Python e verifica o `index.html` e referências locais em HTML e CSS, incluindo a capitalização dos nomes de arquivos e diretórios. O comando retorna erro se encontrar um recurso ausente ou um caminho incompatível com o projeto. Referências externas não são verificadas.
 
 ## CI/CD e GitHub Pages
 

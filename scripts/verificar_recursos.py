@@ -1,4 +1,5 @@
 from html.parser import HTMLParser
+import os
 from pathlib import Path
 import re
 import sys
@@ -21,8 +22,8 @@ def verificar(origem, referencia):
     if caminho.startswith('/') or '\\' in caminho:
         erros.append((origem, referencia, 'use um caminho relativo com /'))
         return
-    destino = (origem.parent / caminho).resolve()
-    if not destino.is_relative_to(ROOT):
+    destino = Path(os.path.abspath(origem.parent / caminho))
+    if not destino.is_relative_to(ROOT) or not destino.resolve().is_relative_to(ROOT):
         erros.append((origem, referencia, 'caminho fora do projeto'))
         return
     atual = ROOT
